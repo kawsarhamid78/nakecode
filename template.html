@@ -2,8 +2,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
+<script type='text/javascript'>//<![CDATA[
+var blog = document.location.hostname;
+var slug = document.location.pathname;
+var ctld = blog.substr(blog.lastIndexOf("."));
+if (ctld != ".com") {
+  var ncr = "https://" + blog.substr(0, blog.indexOf("."));
+  ncr += ".blogspot.com/ncr" + slug;
+  window.location.replace(ncr);
+}
+//]]></script>
 <title><data:blog.pageTitle/></title>
-&lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin>*/</b:skin>
+&lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin><![CDATA[*/]]></b:skin>
 <style>
 a{color:#87BCC4;text-decoration:none;font-family:Arial;}
 a:hover{color:#ccc;}
