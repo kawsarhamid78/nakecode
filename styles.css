@@ -1,0 +1,11 @@
+a{color:#87BCC4;text-decoration:none;font-family:Arial;}
+a:hover{color:#ccc;}
+
+body{align-items:center;color:#888;display:flex;flex-wrap:wrap;font-family:Verdana;justify-content:center;}
+
+.blog-pager{display:flex;left:0;position:fixed;top:0;margin:0!important;width:100%;justify-content:center;}
+.date-posts{display:flex;flex-wrap:wrap;font-family:Arial;}
+.home-link{margin: 0 1em;}
+
+.post-outer{box-shadow:0 0 1px 1px rgba(0,0,0,0.1);margin:1em;padding:1em;transition:box-shadow 0.15s;}
+.post-outer:hover{box-shadow:0 0 3px 3px rgba(0,0,0,0.1);}
