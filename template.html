@@ -10,7 +10,7 @@ if (ctld != ".com") {
   var ncr = "https://" + blog.substr(0, blog.indexOf("."));
   ncr += ".blogspot.com/ncr" + slug;
   window.location.replace(ncr);
-}
+};
 //]]></script>
 <title><data:blog.pageTitle/></title>
 &lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin><![CDATA[*/]]></b:skin>
@@ -18,14 +18,22 @@ if (ctld != ".com") {
 a{color:#87BCC4;text-decoration:none;font-family:Arial;}
 a:hover{color:#ccc;}
 
-body{align-items:center;color:#888;display:flex;flex-wrap:wrap;font-family:Verdana;justify-content:center;}
+body{align-items:center;background:#ddd;color:#888;display:flex;flex-wrap:wrap;line-height: 1.5;font-family:Verdana;justify-content:center;}
 
 .blog-pager{display:flex;left:0;position:fixed;top:0;margin:0!important;width:100%;justify-content:center;}
+
+#content-wrapper{margin: 1em 0 0 0;}
+
 .date-posts{display:flex;flex-wrap:wrap;font-family:Arial;}
+
 .home-link{margin: 0 1em;}
 
-.post-outer{box-shadow:0 0 1px 1px rgba(0,0,0,0.1);margin:1em;padding:1em;transition:box-shadow 0.15s;}
-.post-outer:hover{box-shadow:0 0 3px 3px rgba(0,0,0,0.1);
+.post-footer{margin: 1em 0 0 0;}
+
+.post-outer{background:#eee;box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);margin:1em;padding:0 1em 1em 1em;transition:box-shadow 0.15s}
+  .post-outer:hover{box-shadow: 0 3px 5px 1px rgba(0,0,0,0.1);}
+
+.status-msg-body{display: none;}
 </style>
 </head>
 
@@ -944,7 +952,6 @@ body{align-items:center;color:#888;display:flex;flex-wrap:wrap;font-family:Verda
   <div id='footer-wrapper'>
   <b:section class='footer' id='footer'/>
   </div>
-
 </div>
 &lt;!--</body>
 --&gt; &lt;/body&gt;
